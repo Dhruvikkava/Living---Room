@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MontageSerif';
+    src: url('MontageSerifFont-Regular.eot');
+    src: url('MontageSerifFont-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MontageSerifFont-Regular.woff2') format('woff2'),
+        url('MontageSerifFont-Regular.woff') format('woff'),
+        url('MontageSerifFont-Regular.ttf') format('truetype'),
+        url('MontageSerifFont-Regular.svg#MontageSerifFont-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
