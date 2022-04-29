@@ -10,11 +10,14 @@ Project Name : Living-Room;
 body{
     font-family: 'MontageSerif';
     background-color: #272727;
+    transition: all 0.4s linear;
+    cursor: none;
 }
 h1{font-size: 130px;}
 p,h1,h2,h3,h4,h5{margin:0}
 ul{margin:0}
-
+a{text-decoration: none;}
+a:hover{text-decoration: none;color:#959595;}
 
 
 /* Header 
@@ -23,17 +26,29 @@ header{position: fixed;top: 0;left: 0;width:100%;padding: 36px 0;background-colo
 .header-container{max-width: 1884px;padding: 0 40px;margin:0 auto;}
 .header-wrapper{display: flex;justify-content: space-between;align-items: center;}
 .header-wrapper .logo{display: block;}
-.header-wrapper .menu-icon{width:62px;height: 14px;line-height: 0;}
+.header-wrapper .menu-icon{width:62px;height: 14px;line-height: 0;transition: all 0.4s ease-in-out;}
 .header-wrapper .menu-icon:hover{cursor: pointer;}
 .header-wrapper .menu-icon svg{width:100% !important;height: 100%;}
 .get-in-touch{display: block;color: #FFFFFF;}
 .close-text{display: none;color:#FFFFFF;}
 .close-text:hover{cursor: pointer;}
 
+.header-toggle{display: none;position: fixed;top:0;left: 0;width:100%;height: 100vh;background-color: #272727;padding:0 58px;overflow: auto;margin-top: -500px;transition: all 0.4s linear;}
+.toggle-content{display: flex;justify-content: space-between;flex-direction: column;}
+.grid-content{display: flex;justify-content: space-around;align-items: center;}
+.grid-content .grid-item{display: flex;max-width: 50%;flex:0 0 50%;justify-content: center;padding:50px 0;color:#FFFFFF;}
+.grid-content .grid-item a{display: flex;text-decoration: none;color: #FFFFFF;}
+.grid-content .grid-item a .vertical{writing-mode: vertical-lr;text-align: center;color:#959595}
+.grid-content .grid-item a .rtl{transform: rotate(180deg);margin-right: 20px;}
+.grid-content .grid-item a .ltr{margin-left: 20px;}
+.grid-content .grid-item a .item{font-size: 70px;}
+
+.navbar-toggle .header-toggle{display: block;z-index: -1;margin-top: 0;}
+
 
 /* Footer 
 --------------------------------------------------------------------------------------------------------*/
-footer{padding:35px 0;background-color: #505050;border-top: 1px solid #959595;color:#959595;max-width: 1920px;margin:0 auto}
+footer{padding:35px 0;background-color: #505050;border-top: 1px solid #959595;color:#959595;max-width: 1920px;margin:0 auto;}
 .footer-content{padding:0 40px;display: flex;justify-content: space-between;align-items: center;}
 
 
@@ -43,7 +58,7 @@ footer{padding:35px 0;background-color: #505050;border-top: 1px solid #959595;co
 .banner{width:100%;height: 100vh;position: relative;}
 .banner::after{position: absolute;content: "";top:0;left: 0;width:100%;height: 100%;background-color: rgba(0, 0, 0, 0.5);}
 .banner .content{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 1;}
-h1{color: #FFFFFF;margin-bottom: 72px;width:880px}
+h1{color: #FFFFFF;margin-bottom: 72px;width:880px;overflow: hidden;}
 .banner .content p{text-align: center;color: #FFFFFF;font-size: 18px;}
 .banner .content p span.left{padding-right: 30px;}
 .banner .content p span.right{padding-left: 25px;}
@@ -87,7 +102,7 @@ h1{color: #FFFFFF;margin-bottom: 72px;width:880px}
 .collaction .content p{text-align: justify;color:#FFFFFF;}
 .download-text{display: flex;align-items: flex-start;text-decoration-line: underline;color: #FFFFFF;}
 .download-text .fa-arrow-down{margin-right: 10px;line-height: 24px;}
-.download-text:hover{color:#959595;}
+/* .download-text:hover{color:#959595;text-decoration-line: underline;} */
 
 .block-items{padding: 0 59px 100px 362px;}
 .block-items ul{display: flex;flex-wrap: wrap;}
@@ -97,10 +112,15 @@ h1{color: #FFFFFF;margin-bottom: 72px;width:880px}
 .block-items ul li a .item{font-size: 67px;}
 .block-items ul li a .number{font-size: 67px;}
 .block-items ul li a .number em{margin-right: 16px;}
-.block-items ul li a:hover{color:#FFFFFF;background-image: url("https://api.moralia.ca/storage/cam002-16481153443LM1t.jpg");background-size: 200px 200px;background-repeat: no-repeat;}
+.block-items ul li a:hover{color:#FFFFFF;}
+.link1,.link2,.link3,.link4,.link5,.link6{position: relative !important;overflow: hidden;}
 
 .details{text-align: center;color: #FFFFFF;padding:100px 40px;}
 .details h3{font-size: 24px;letter-spacing: 32px;margin-bottom: 45px;}
 .details .text{max-width: 580px;margin:0 auto 45px auto;}
 .details .call-us{font-size: 26px;}
 .details .call-us a{text-decoration: none;color: #FFFFFF;}
+
+.scroll-follow{width:200px;height: 200px;position: absolute;top: -100px;left: -460px;z-index: -1;object-fit: cover;visibility: hidden;opacity: 0;transition: all 0.5s linear;}
+.ball {width: 40px;height: 40px;position: fixed;top: 0;left: 0;border: 1px solid #201f1f; border-radius: 50%;pointer-events: none;z-index: 20;display: flex;justify-content: center;align-items: center;background-color: transparent;}
+.ball .inner-ball{width:5px;height: 5px;background-color: #FFFFFF;border-radius: 50%;}

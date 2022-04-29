@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body style="position:relative" >
+    <div class="ball"><div class="inner-ball"></div></div>
+    <div id="wrapper">
+    <div id="content">
     <div class="wrapper">
         <!-- Header start  -->
         <header class="header">
@@ -25,15 +28,57 @@
                     <a href="#" class="get-in-touch">GET IN TOUCH</a>
                 </div>
             </div>
+            <div class="header-toggle">
+                <div class="toggle-content">
+                <div class="grid-content">
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="vertical rtl">[01]</p><p class="item">HOME</p>
+                        </a>
+                    </div>
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="item">PRODUCTS</p><p class="vertical ltr">[02]</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-content">
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="vertical rtl">[03]</p><p class="item">THE BRAND</p>
+                        </a>
+                    </div>
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="item">TRADE</p><p class="vertical ltr">[04]</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-content">
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="vertical rtl">[05]</p><p class="item">CAREERS</p>
+                        </a>
+                    </div>
+                    <div href="#" class="grid-item">
+                        <a href="#">
+                            <p class="item">CONTACT</p><p class="vertical ltr">[06]</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
         </header>
         <!-- Header end  -->
 
         <div class="main-content">
         <!-- Banner start  -->
         <section class="banner">
-            <img src="https://api.moralia.ca/storage/cam001-2-1648115280ylbAz.jpg" alt="banner-image">
+            <img data-aos="zoom-in" src="https://api.moralia.ca/storage/cam001-2-1648115280ylbAz.jpg" alt="banner-image">
             <div class="content">
-                <h1>LIVING ROOM</h1>
+                <h1 class="head-text">
+                    LIVING ROOM
+                </h1>
                 <p><span class="left">[</span>Designed for the multifunctional everyday life<span class="right">]</span></p>
             </div>
         </section>
@@ -41,22 +86,22 @@
 
         <!-- Main section start  -->
         <section class="main-section">
-            <div class="text-content">
+            <div class="text-content" data-aos="zoom-out-down">
                 <p><span class="left">[</span>A Moralia living room reinterprets the contemporary needs of this multifunctional space. We take a built-in architectural approach to our living room designs, blending the boundaries between the flow of furniture and architectural elements of the room. Our designs enhance the composition of your living room by adding character and style as well as making. <span class="right">]</span></p>
             </div>
-            <div class="image-content">
-                <div class="left-block">
-                    <div class="image-left">
-                        <img src="https://api.moralia.ca/storage/cam002-16481153443LM1t.jpg" alt="left-image">
+            <div class="image-content" >
+                <div class="left-block" >
+                    <div class="image-left" data-speed="1.1" style="overflow: hidden;">
+                        <img data-speed="0.1" src="https://api.moralia.ca/storage/cam002-16481153443LM1t.jpg" alt="left-image">
                     </div>
                 </div>
                 <div class="right-block">  
                     <div class="image-right-wrap">                  
                         <div class="image-right">
-                            <img src="https://api.moralia.ca/storage/004-1648115363gGkqS.jpg" alt="right-image">
+                            <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="https://api.moralia.ca/storage/004-1648115363gGkqS.jpg" alt="right-image">
                         </div>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <div class="content">
                             <div class="grid">
                                 <p> The synthesis of emotions and functional innovative design </p>
@@ -86,7 +131,7 @@
             </div>
             <div class="target-image">
                 <div class="left-content">
-                    <p class="text">
+                    <p class="text" data-aos="zoom-out-down">
                         <span class="left">[</span> 
                         Some of our wall units are designed to have multiple depths which when enhanced with our exclusive material choices create a dynamic three-dimensional effect that looks different from every perspective.
                         <span class="right">]</span>
@@ -98,13 +143,13 @@
                     </div>
                 </div>
             </div>
-            <div class="image-room">
-                <img src="https://api.moralia.ca/storage/cam008-1648115417aaUwa.jpg" alt="room-image">
+            <div class="image-room" style="overflow: hidden;">
+                <img data-speed="0.3" src="https://api.moralia.ca/storage/cam008-1648115417aaUwa.jpg" alt="room-image">
             </div>
             <div class="collaction-wrap">
                 <div class="collaction">
                     <div class="content">
-                        <h2>COLLACTIONS</h2>
+                        <h2 id="collactions">COLLACTIONS</h2>
                         <p><span class="left">[</span>Discover our collection of six different living room proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia living room project.<span class="right">]</span></p>
                     </div>
                     <a href="#" class="download-text">
@@ -113,18 +158,18 @@
                     </a>
                 </div>                
             </div>
-            <div class="block-items">                
+            <div class="block-items">                               
                 <ul>
-                    <li><a href="#" class="links"><span class="item">VOLCANO</span> <span class="number"><em>/</em>01</span></a></li>
-                    <li><a href="#" class="links"><span class="item">SUBLIME</span> <span class="number"><em>/</em>02</span></a></li>
-                    <li><a href="#" class="links"><span class="item">GRAND</span> <span class="number"><em>/</em>03</span></a></li>
-                    <li><a href="#" class="links"><span class="item">CLOSE-UP</span> <span class="number"><em>/</em>04</span></a></li>
-                    <li><a href="#" class="links"><span class="item">HARMONY</span> <span class="number"><em>/</em>05</span></a></li>
-                    <li><a href="#" class="links"><span class="item">CUBE</span> <span class="number"><em>/</em>06</span></a></li>
+                    <li><a href="#" class="links link1" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/004-1648115363gGkqS.jpg" class="scroll-follow" alt="img1"><span class="item">VOLCANO</span> <span class="number"><em>/</em>01</span></a></li>
+                    <li><a href="#" class="links link2" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/cam005-1648115402L8xWL.jpg" class="scroll-follow follow-img2" alt="img1"><span class="item">SUBLIME</span> <span class="number"><em>/</em>02</span></a></li>
+                    <li><a href="#" class="links link3" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/004-1648115363gGkqS.jpg" class="scroll-follow follow-img3" alt="img1"><span class="item">GRAND</span> <span class="number"><em>/</em>03</span></a></li>
+                    <li><a href="#" class="links link4" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/cam008-1648115417aaUwa.jpg" class="scroll-follow follow-img4" alt="img1"><span class="item">CLOSE-UP</span> <span class="number"><em>/</em>04</span></a></li>
+                    <li><a href="#" class="links link5" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/004-1648115363gGkqS.jpg" class="scroll-follow follow-img5" alt="img1"><span class="item">HARMONY</span> <span class="number"><em>/</em>05</span></a></li>
+                    <li><a href="#" class="links link6" id="links" data-aos="zoom-in-right"><img src="https://api.moralia.ca/storage/cam008-1648115417aaUwa.jpg" class="scroll-follow follow-img6" alt="img1"><span class="item">CUBE</span> <span class="number"><em>/</em>06</span></a></li>
                 </ul>
             </div>
             <div class="details">
-                <h3>LET'S GET STARTED</h3>
+                <h3 data-aos="zoom-in-down">LET'S GET STARTED</h3>
                 <p class="text">We create unique designs and manufacture in-house at our state-of- the-art Canadian facility to meet all of your custom needs.</p>
                 <p class="call-us">[&emsp;CALL US <a href="tel:+1-800-582-7177"> +1-800-582-7177</a>&emsp;]</p>
             </div>
@@ -139,6 +184,8 @@
             <span>SITE BY THE FIRST THE LAST</span>
         </div>
     </footer>
+    </div>
+    </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
